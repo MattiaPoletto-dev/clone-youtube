@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+#header {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    display: flex;
+}
+
+/* Right Header */
+
+#header > #right {
+    width: 150px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+#header > #right > .img1 {
+    margin-left: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#header > #right > .img2 {
+    margin-left: 25px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Center Header */
+#header > #center {
+    margin-left: 25px;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header > #center > .left {
+    flex: 1;
+    max-width: 400px;
+    
+    display: flex;
+    justify-content: end;
+}
+#header > #center > .left > input {
+    margin-left: 10px;
+    padding-left: 10px;
+    flex: 1;
+    width: 0px;
+    height: 36px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 18px 0px 0px 18px;
+}
+
+
+
+#header > #center > .right {
+    width: 120px;
+    display: flex;
+    gap: 10px;
+}
+#header > #center > .right > .btn1 {
+    position: relative;
+    width: 60px;
+    height: 38px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(187, 187, 187);
+    transform: translateX(-1px);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+}
+#header > #center > .right > .btn1:hover {
+    background-color: rgb(236, 233, 233);
+}
+#header > #center > .right > .btn1:hover .search-hover {
+    opacity: 1;
+}
+#header > #center > .right > .btn1 > .search-hover {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+
+#header > #center > .right img {
+    width: 30px;
+}
+
+#header > #center > .right > .btn2 {
+    position: relative;
+    width: 38px;
+    height: 38px;
+
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#header > #center > .right > .btn2:hover .search-voice-hover {
+    opacity: 1;
+}
+#header > #center > .right > .btn2 > .search-voice-hover {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: -53px;
+    width: 135px;
+    padding: 10px;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+}
+#header > #center > .right > .btn2:hover {
+    background-color: rgb(236, 233, 233);
+}
+
+/* Left Header */
+#header > #left {
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 200px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#header > #left > .img1 {
+    position: relative;
+}
+#header > #left > .img1 > img {
+    width: 25px;
+    cursor: pointer;
+}
+#header > #left > .img1:hover .create {
+    opacity: 1;
+}
+#header > #left > .img1 > .create {
+    opacity: 0;
+    position: absolute;
+    top: 46px;
+    left: -20px;
+    padding: 7px 10px;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+
+
+#header > #left > .img2 {
+    position: relative;
+}
+#header > #left > .img2 > img {
+    width: 25px;
+    cursor: pointer;
+}
+#header > #left > .img2:hover .youtube-apps {
+    opacity: 1;
+}
+#header > #left > .img2 > .youtube-apps {
+    width: 98px;
+    opacity: 0;
+    position: absolute;
+    top: 46px;
+    left: -42px;
+    padding: 7px 10px;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+
+#header > #left > .img3 {
+    position: relative;
+}
+#header > #left > .img3 > img {
+    width: 25px;
+    cursor: pointer;
+}
+#header > #left > .img3:hover .notification {
+    opacity: 1;
+}
+#header > #left > .img3 > .notification {
+    opacity: 0;
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    padding: 7px 10px;
+    background-color: rgba(88, 88, 88, 0.8);
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+
+#header > #left > .img4 > img {
+    margin-right: 10px;
+    width: 35px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
